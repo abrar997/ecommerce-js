@@ -1,0 +1,15 @@
+{
+  "name": "ecom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/input-style.css -o ./public/output-style.css",
+    "watch:css": "tailwindcss -i ./src/input-style.css -o ./public/output-style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}

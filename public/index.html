@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/output-style.css" />
+    <link rel="stylesheet" href="../src/input-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>Ecommerce</title>
+  </head>
+  <body class="bg-main font-main">
+    <section
+      id="header"
+      class="fixed inset-x-0 z-50 flex items-center justify-between p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-6 bg-secondary"
+    >
+      <a href="/" class="flex items-center gap-1 font-serif text-3xl"
+        >A <i class="-ml-1 text-sm text-primary fa-solid fa-leaf"></i
+      ></a>
+      <ul class="flex gap-4 lg:gap-12">
+        <li
+          class="font-semibold transition-all duration-300 hover:text-primary"
+        >
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="font-semibold transition-all duration-300 hover:text-primary"
+        >
+          <a href="shop.html">Shop</a>
+        </li>
+        <li
+          class="font-semibold transition-all duration-300 hover:text-primary"
+        >
+          <a href="blog.html">blog</a>
+        </li>
+        <li
+          class="font-semibold transition-all duration-300 hover:text-primary"
+        >
+          <a href="about.html">about</a>
+        </li>
+        <li
+          class="font-semibold transition-all duration-300 hover:text-primary"
+        >
+          <a href="contact.html">contact</a>
+        </li>
+      </ul>
+      <button
+        class="flex items-center justify-center p-2 text-gray-800 bg-gray-100 border rounded-full shadow lg:h-10 lg:w-10"
+      >
+        <i class="fa-solid fa-bag-shopping"></i>
+      </button>
+    </section>
+
+    <section
+      id="hero"
+      class="flex flex-col justify-center gap-3 p-4 pt-32 text-center bg-secondary lg:pt-56 lg:pb-32 lg:items-center"
+    >
+      <h4 class="font-semibold">Trade-in-offer</h4>
+      <h2 class="text-3xl font-bold capitalize lg:text-6xl">
+        Super value deals
+      </h2>
+      <h1
+        class="-mt-[14px] text-3xl font-bold text-teal-700 capitalize lg:text-6xl"
+      >
+        on all products
+      </h1>
+      <p class="text-gray-500">Save more with coupons & up to 70% off!</p>
+
+      <button
+        class="items-center flex text-lg font-semibold bg-[url(assets/button.png)] bg-center bg-cover px-12 transition-all duration-300 bg-no-repeat border rounded bg-fill focus:outline-none"
+      >
+        <span class="m-auto text-center"> shop now </span>
+      </button>
+    </section>
+
+    <section
+      id="features"
+      class="grid gap-3 p-4 py-6 font-semibold capitalize text-primary lg:gap-6 lg:grid-cols-6 lg:px-20 lg:py-12"
+    >
+      <div
+        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-blue-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+      >
+        <img src="assets/features/f1.png" alt="" />
+        <h6 class="p-2 px-4 bg-blue-200 rounded">Free shipping</h6>
+      </div>
+      <div
+        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-pink-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+      >
+        <img src="assets/features/f2.png" alt="" />
+        <h6 class="p-2 px-4 bg-pink-200 rounded">online order</h6>
+      </div>
+      <div
+        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-transparent bg-teal-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+      >
+        <img src="assets/features/f3.png" alt="" />
+        <h6 class="p-2 px-4 bg-teal-200 rounded">save money</h6>
+      </div>
+      <div
+        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-purple-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+      >
+        <img src="assets/features/f4.png" alt="" />
+        <h6 class="p-2 px-4 bg-purple-200 rounded">promotions</h6>
+      </div>
+      <div
+        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-red-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+      >
+        <img src="assets/features/f5.png" alt="" />
+        <h6 class="p-2 px-4 bg-red-200 rounded">happy sell</h6>
+      </div>
+      <div
+        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-orange-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+      >
+        <img src="assets/features/f6.png" alt="" />
+        <h6 class="p-2 px-4 bg-orange-200 rounded">F 7/24 support</h6>
+      </div>
+    </section>
+
+    <section id="product1" class="grid p-4 py-6 lg:gap-8 lg:p-12 lg:px-20">
+      <div class="leading-7 text-center">
+        <h2 class="font-bold capitalize lg:text-4xl">featured products</h2>
+        <h2 class="text-gray-400">Summer collection new modern design</h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="grid items-center p-2 border rounded swiper-slide lg:gap-2"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid p-2 border rounded swiper-slide lg:gap-2">
+            <img
+              src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded rounded-br-none rounded-bl-none lg:h-[250px] w-full object-cover"
+            />
+            <div class="pb-2">
+              <h3 class="text-sm text-gray-500">company name</h3>
+              <h1>Cartoon astronout T-shirts</h1>
+              <p class="flex gap-1">
+                <span></span>
+              </p>
+              <div
+                class="flex items-center justify-between font-semibold text-primary"
+              >
+                <h4>$45</h4>
+                <button
+                  class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-20 swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
