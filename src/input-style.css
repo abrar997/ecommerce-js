@@ -2,14 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
-
-
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: teal !important;
+  padding: 6px;
+  color: #eee !important;
+  fill: teal !important;
+  stroke: rgb(2, 55, 55) !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+.fa-star {
+  color: rgb(162, 162, 6) !important;
+  font-size: 12px !important;
+}
