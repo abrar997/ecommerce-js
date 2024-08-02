@@ -11,15 +11,14 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: teal !important;
+  background-color: #e4e6f4 !important;
   padding: 6px;
-  color: #eee !important;
-  fill: teal !important;
-  stroke: rgb(2, 55, 55) !important;
-  width: 30px !important;
-  height: 30px !important;
+  color: rgb(0, 92, 95) !important;
+  width: 30px;
+  height: 30px;
 }
+
 .fa-star {
-  color: rgb(162, 162, 6) !important;
-  font-size: 12px !important;
+  color: rgb(162, 162, 6);
+  font-size: 12px;
 }

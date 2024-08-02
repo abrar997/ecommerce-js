@@ -7,6 +7,7 @@ module.exports = {
         main: "#f3fcff",
         secondary: "#e4e6f4",
         primary: "#11766f",
+        text: "#fff",
       },
       fontFamily: {
         main: '"League Spartan", sans-serif',
