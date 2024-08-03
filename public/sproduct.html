@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output-style.css" />
+    <link rel="stylesheet" href="css/input-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Shop</title>
+  </head>
+  <body class="bg-main font-main">
+    <section
+      id="header"
+      class="fixed inset-x-0 z-50 p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
+    >
+      <div class="flex items-center justify-between p-4">
+        <a href="/" class="flex items-center gap-1 font-serif text-3xl"
+          >A <i class="-ml-1 text-sm text-primary fa-solid fa-leaf"></i
+        ></a>
+        <div class="flex items-center gap-12">
+          <ul class="hidden gap-4 lg:flex lg:gap-12">
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="shop.html">Shop</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="blog.html">blog</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="about.html">about</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+          <div class="flex gap-4">
+            <button class="text-lg text-gray-800 lg:hidden" id="bar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="text-gray-700">
+              <i class="text-xl fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul
+        id="nav"
+        class="absolute items-start top-0 right-[-300px] flex flex-col w-[300px] h-screen gap-2 px-4 py-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
+      >
+        <button
+          class="p-2 px-4 text-xl font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          id="close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="shop.html">Shop</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="blog.html">blog</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="about.html">about</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="contact.html">contact</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <button class="text-gray-700">
+            <i class="text-xl fa-solid fa-bag-shopping"></i>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="p-4 pt-32 lg:pt-28 lg:px-24">
+      <div class="flex flex-col gap-4 lg:grid lg:grid-cols-3 lg:gap-0">
+        <div class="grid order-2 w-full gap-3 lg:order-1 lg:grid-cols-1">
+          <img
+            src="https://images.unsplash.com/photo-1561334112-5cc34885f22f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lg:h-[500px] h-[400px] w-full object-cover"
+            id="mainImg"
+          />
+          <div class="grid w-full grid-cols-3 gap-2">
+            <button>
+              <img
+                class="h-[100px] small-img w-full"
+                src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxMjIwNzYyfHxlbnwwfHx8fHw%3D"
+              />
+            </button>
+            <button>
+              <img
+                class="h-[100px] small-img w-full"
+                src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+            </button>
+
+            <button>
+              <img
+                class="h-[100px] small-img w-full"
+                src="https://images.unsplash.com/photo-1525171254930-643fc658b64e?q=80&w=1977&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-col col-span-2 gap-3 lg:order-2 lg:p-12">
+          <h1 class="text-3xl font-semibold">Women's Fashion</h1>
+          <h2 class="text-3xl font-bold text-gray-600">$200.00</h2>
+          <select class="py-2 bg-transparent border w-[26%] border-gray-500">
+            <option class="rounded-none">Select Size</option>
+            <option>sm</option>
+            <option>lg</option>
+            <option>xl</option>
+            <option>2xl</option>
+            <option>Free size</option>
+          </select>
+          <div class="flex gap-2 py-2">
+            <input
+              type="text"
+              value="1"
+              class="bg-transparent border-gray-600 rounded w-[80px] border text-center"
+            />
+            <button
+              class="px-4 py-2 text-white rounded hover:bg-opacity-80 bg-primary"
+            >
+              Addd to cart
+            </button>
+          </div>
+          <div>
+            <h2 class="text-2xl font-semibold capitalize">Product details</h2>
+            <p class="text-lg font-light text-gray-500">
+              Our Women’s Classic Slim Fit Cotton Shirt is designed with both
+              style and comfort in mind. The premium cotton fabric ensures a
+              breathable and comfortable experience, making it suitable for
+              all-day wear. The slim fit design provides a contemporary
+              silhouette that pairs well with both jeans and dress pants.
+              Whether you’re heading to the office or out for a casual dinner,
+              this shirt is a versatile addition to your wardrobe .
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product2" class="grid gap-3 p-4 py-6 lg:gap-8 lg:p-8 lg:px-20">
+      <div class="leading-7 text-center">
+        <h2 class="text-3xl font-bold capitalize lg:text-4xl">
+          Featured products
+        </h2>
+        <h2 class="text-gray-400">Summer collection new modern design</h2>
+      </div>
+      <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-y-12">
+        <div class="grid gap-2 p-2 border rounded lg:px-4 lg:pt-3">
+          <img
+            src="https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
+          />
+          <div class="pb-2">
+            <h3 class="text-sm text-gray-500">company name</h3>
+            <h1>Cartoon astronout T-shirts</h1>
+            <p class="flex gap-1 text-sm">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </p>
+            <div
+              class="flex items-center justify-between font-semibold text-primary"
+            >
+              <h4>$45</h4>
+              <button
+                class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-2 p-2 border rounded lg:px-4 lg:pt-3">
+          <img
+            src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
+          />
+          <div class="pb-2">
+            <h3 class="text-sm text-gray-500">company name</h3>
+            <h1>Cartoon astronout T-shirts</h1>
+            <p class="flex gap-1 text-sm">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </p>
+            <div
+              class="flex items-center justify-between font-semibold text-primary"
+            >
+              <h4>$45</h4>
+              <button
+                class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-2 p-2 border rounded lg:px-4 lg:pt-3">
+          <img
+            src="https://images.unsplash.com/photo-1618677603286-0ec56cb6e1b5?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
+          />
+          <div class="pb-2">
+            <h3 class="text-sm text-gray-500">company name</h3>
+            <h1>Cartoon astronout T-shirts</h1>
+            <p class="flex gap-1 text-sm">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </p>
+            <div
+              class="flex items-center justify-between font-semibold text-primary"
+            >
+              <h4>$45</h4>
+              <button
+                class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid gap-2 p-2 border rounded lg:px-4 lg:pt-3">
+          <img
+            src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+            alt=""
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
+          />
+          <div class="pb-2">
+            <h3 class="text-sm text-gray-500">company name</h3>
+            <h1>Cartoon astronout T-shirts</h1>
+            <p class="flex gap-1 text-sm">
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+              <span><i class="fa-solid fa-star"></i></span>
+            </p>
+            <div
+              class="flex items-center justify-between font-semibold text-primary"
+            >
+              <h4>$45</h4>
+              <button
+                class="flex items-center justify-center w-8 h-8 p-2 transition-all duration-300 rounded-full hover:shadow bg-slate-200"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative mt-8 h-[200px] lg:h-[250px] lg:mt-8 text-white bg-[url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] grid lg:grid-cols-2 lg:gap-12"
+    >
+      <div
+        class="absolute bg-[#000000a9] inset-0 flex flex-col lg:grid lg:px-20 lg:p-12 gap-3 items-center justify-center"
+      >
+        <div class="text-center">
+          <h1 class="text-3xl font-bold capitalize">Sign up for networks</h1>
+          <p class="text-lg font-light text-gray-400">
+            Get Email updates about our latest shop and special offers
+          </p>
+        </div>
+        <form class="flex">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="px-4 py-3 w-full lg:w-[400px] bg-white border-none rounded rounded-r-none placeholder:text-gray-600"
+          />
+          <button
+            class="px-4 py-3 w-[50%] lg:w-[30%] font-semibold text-white rounded rounded-l-none hover:bg-opacity-90 lg:px-6 bg-primary"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="p-4 lg:py-8 bg-secondary lg:px-20">
+      <div class="grid items-start gap-4 lg:grid-cols-3 lg:gap-0">
+        <div class="grid col-span-1 gap-4">
+          <a href="/" class="flex items-center gap-1 font-serif text-5xl"
+            >A <i class="-ml-1 text-lg text-primary fa-solid fa-leaf"></i
+          ></a>
+
+          <div>
+            <h3 class="text-xl font-semibold">contact</h3>
+
+            <p>
+              Address: <span class="text-gray-500">Town in this world</span>
+            </p>
+            <p>Phone: <span class="text-gray-500">+964783119025433</span></p>
+            <p>
+              Hours : <span class="text-gray-500">10:00-18:00 Sun-Fri</span>
+            </p>
+          </div>
+          <div class="hidden lg:grid">
+            <h2 class="font-semibold">Follow us</h2>
+            <div class="flex gap-2 text-gray-500">
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid w-full col-span-2 gap-4 lg:grid-cols-3 lg:gap-12">
+          <div class="grid gap-3">
+            <h3 class="font-semibold">About</h3>
+            <div class="grid gap-2 text-gray-500 capitalize">
+              <a href="" class="hover:text-gray-700">About us</a>
+              <a href="" class="hover:text-gray-700">Deliver information</a>
+              <a href="" class="hover:text-gray-700">Primary Policy</a>
+              <a href="" class="hover:text-gray-700">Terms and conditions</a>
+              <a href="" class="hover:text-gray-700">Contact us</a>
+            </div>
+          </div>
+          <div class="grid gap-3">
+            <h3 class="font-semibold">My account</h3>
+            <div class="grid gap-2 text-gray-500 capitalize">
+              <a href="" class="hover:text-gray-700">Sign up</a>
+              <a href="" class="hover:text-gray-700">view cart</a>
+              <a href="" class="hover:text-gray-700">tracks my order</a>
+              <a href="" class="hover:text-gray-700">my wishlist</a>
+              <a href="" class="hover:text-gray-700">Help</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3 class="font-semibold">Install App</h3>
+            <div class="grid capitalize">
+              <p class="text-gray-500">from app store or google play</p>
+              <div class="flex gap-4">
+                <button
+                  class="px-4 py-2 font-semibold border rounded border-primary"
+                >
+                  <i class="fa-brands fa-apple"></i> App store
+                </button>
+                <button
+                  class="flex items-center gap-1 px-4 py-2 font-semibold border rounded border-primary"
+                >
+                  <i class="fa-brands fa-google-play"></i> Google play
+                </button>
+              </div>
+            </div>
+            <div class="grid gap-2 capitalize">
+              <p class="text-gray-500">secured payments gateways</p>
+              <div class="flex gap-4 text-xl">
+                <a href="" class="text-red-500"
+                  ><i class="fa-brands fa-cc-visa"></i
+                ></a>
+                <a href="" class="text-primary"
+                  ><i class="fa-brands fa-cc-mastercard"></i
+                ></a>
+                <a href="" class="text-yellow-700"
+                  ><i class="fa-solid fa-cash-register"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 lg:hidden">
+        <h2 class="font-semibold">Follow us</h2>
+        <div class="flex gap-2 text-gray-500">
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full pt-4 font-light text-gray-400 lg:text-center">
+        @2024
+        <span class="font-semibold text-primary"
+          >- Abrar Muthana<i class="ml-1 text-sm fa-solid fa-heart"></i> -</span
+        >
+        Ecommerce Template
+      </div>
+    </section>
+
+    <script>
+      const mainImg = document.getElementById("mainImg");
+      const smallImg = document.getElementsByClassName("small-img");
+
+      smallImg[0].onclick = function () {
+        mainImg.src = smallImg[0].src;
+      };
+      smallImg[1].onclick = function () {
+        mainImg.src = smallImg[1].src;
+      };
+      smallImg[2].onclick = function () {
+        mainImg.src = smallImg[2].src;
+      };
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
