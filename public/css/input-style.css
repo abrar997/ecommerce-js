@@ -12,10 +12,11 @@
 .swiper-button-next,
 .swiper-button-prev {
   background-color: #e4e6f4 !important;
-  padding: 6px;
+  padding: 6px 10px;
   color: rgb(0, 92, 95) !important;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }
 
 .fa-star {
