@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output-style.css" />
+    <link rel="stylesheet" href="css/input-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Shop</title>
+  </head>
+  <body class="bg-main font-main">
+    <section
+      class="fixed inset-x-0 z-50 p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
+    >
+      <div class="flex items-center justify-between p-4">
+        <a href="/" class="flex items-center gap-1 font-serif text-3xl"
+          >A <i class="-ml-1 text-sm text-primary fa-solid fa-leaf"></i
+        ></a>
+        <div class="flex items-center gap-12">
+          <ul class="hidden gap-4 lg:flex lg:gap-12">
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="shop.html">Shop</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="blog.html">blog</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="about.html">about</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+          <div class="flex gap-4">
+            <button class="text-lg text-gray-800 lg:hidden" id="bar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="text-gray-700">
+              <i class="text-xl fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul
+        id="nav"
+        class="absolute items-start top-0 right-[-300px] flex flex-col w-[300px] h-screen gap-2 px-4 py-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
+      >
+        <button
+          class="p-2 px-4 text-xl font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          id="close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="shop.html">Shop</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="blog.html">blog</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="about.html">about</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="contact.html">contact</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <button class="text-gray-700">
+            <i class="text-xl fa-solid fa-bag-shopping"></i>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="flex bg-[url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat bg-fixed relative items-center justify-center gap-3 p-4 bg-purple lg:h-[380px] h-[300px] lg:items-center"
+    >
+      <div
+        class="flex flex-col absolute inset-0 lg:pt-32 text-center pt-24 justify-center items-center text-white bg-[#00000055]"
+      >
+        <h2 class="text-3xl font-bold capitalize lg:text-4xl">#readmore</h2>
+        <p class="text-gray-300">Read all case studies about our products!</p>
+      </div>
+    </section>
+
+    <section
+      class="lg:pt-12 pt-8 px-8 grid lg:gap-6 gap-8 relative lg:px-20 lg:h-[159vh]"
+    >
+      <div class="grid grid-cols-3">
+        <div class="relative lg:col-span-1">
+          <div
+            class="absolute z-0 text-4xl font-bold text-gray-300 lg:ml-2 lg:text-7xl"
+          >
+            13/01
+          </div>
+          6
+          <div class="absolute w-full top-7 cols-span-1 z-1 lg:top-11">
+            <img
+              src="https://images.unsplash.com/photo-1603252109360-909baaf261c7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="h-[300px]"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-center col-span-2 gap-3 p-12 px-6 lg:py-24"
+        >
+          <h1 class="text-3xl font-semibold">Sustainable Fashion Choices</h1>
+          <p>
+            More than ever, consumers are prioritizing sustainability in their
+            fashion choices. This season, eco-friendly fabrics and ethical
+            brands are taking center stage.
+          </p>
+          <button
+            class="flex items-center gap-2 font-semibold text-gray-800 uppercase hover:text-gray-500"
+          >
+            <span> continue reading</span>
+            <div class="hidden lg:flex w-[60px] h-0.5 rounded bg-gray-800" />
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="relative col-span-1">
+          <div
+            class="absolute z-0 text-4xl font-bold text-gray-300 lg:ml-2 lg:text-7xl"
+          >
+            13/01
+          </div>
+          6
+          <div class="absolute w-full top-7 cols-span-1 z-1 lg:top-11">
+            <img
+              src="https://images.unsplash.com/photo-1561052967-61fc91e48d79?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="h-[300px]"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-center col-span-2 gap-3 p-12 px-6 lg:py-24"
+        >
+          <h1 class="text-3xl font-semibold">Bright and Bold Colors</h1>
+          <p>
+            Summer is the perfect time to experiment with color. From sunny
+            yellows to ocean blues,
+          </p>
+          <button
+            class="flex items-center gap-2 font-semibold text-gray-800 uppercase hover:text-gray-500"
+          >
+            <span> continue reading</span>
+            <div class="hidden lg:flex w-[60px] h-0.5 rounded bg-gray-800" />
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 mt-12 lg:mt-0">
+        <div class="relative col-span-1">
+          <div
+            class="absolute z-0 text-4xl font-bold text-gray-300 lg:ml-2 lg:text-7xl"
+          >
+            13/01
+          </div>
+          <div class="absolute w-full top-7 cols-span-1 z-1 lg:top-11">
+            <img
+              src="https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="h-[300px] w-full"
+            />
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-start justify-center col-span-2 gap-3 p-12 px-6 lg:py-24"
+        >
+          <h1 class="text-3xl font-semibold">Bold Prints and Patterns</h1>
+          <p>
+            This summer is all about making a statement, and nothing says bold
+            quite like vibrant prints and patterns.
+          </p>
+          <button
+            class="flex items-center gap-2 font-semibold text-gray-800 uppercase hover:text-gray-500"
+          >
+            <span> continue reading</span>
+            <div class="hidden lg:flex w-[60px] h-0.5 rounded bg-gray-800" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-20">
+      <div class="flex items-center justify-center gap-2">
+        <button
+          id="btn1"
+          class="px-3 py-1 text-white rounded hover:bg-opacity-80 bg-primary"
+        >
+          1
+        </button>
+        <button
+          id="btn2"
+          class="px-3 py-1 text-white rounded hover:bg-opacity-80 bg-primary"
+        >
+          2
+        </button>
+        <button
+          id="btn3"
+          class="px-3 py-1 text-white rounded hover:bg-opacity-80 bg-primary"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="relative mt-8 h-[200px] lg:h-[250px] lg:mt-12 text-white bg-[url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] grid lg:grid-cols-2 lg:gap-12"
+    >
+      <div
+        class="absolute bg-[#000000a9] inset-0 flex flex-col lg:grid lg:px-20 lg:p-12 gap-3 items-center justify-center"
+      >
+        <div class="text-center">
+          <h1 class="text-3xl font-bold capitalize">Sign up for networks</h1>
+          <p class="text-lg font-light text-gray-400">
+            Get Email updates about our latest shop and special offers
+          </p>
+        </div>
+        <form class="flex">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="px-4 py-3 w-full lg:w-[400px] bg-white border-none rounded rounded-r-none placeholder:text-gray-600"
+          />
+          <button
+            class="px-4 py-3 w-[50%] lg:w-[30%] font-semibold text-white rounded rounded-l-none hover:bg-opacity-90 lg:px-6 bg-primary"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="p-4 lg:py-8 bg-secondary lg:px-20">
+      <div class="grid items-start gap-4 lg:grid-cols-3 lg:gap-0">
+        <div class="grid col-span-1 gap-4">
+          <a href="/" class="flex items-center gap-1 font-serif text-5xl"
+            >A <i class="-ml-1 text-lg text-primary fa-solid fa-leaf"></i
+          ></a>
+
+          <div>
+            <h3 class="text-xl font-semibold">contact</h3>
+
+            <p>
+              Address: <span class="text-gray-500">Town in this world</span>
+            </p>
+            <p>Phone: <span class="text-gray-500">+964783119025433</span></p>
+            <p>
+              Hours : <span class="text-gray-500">10:00-18:00 Sun-Fri</span>
+            </p>
+          </div>
+          <div class="hidden lg:grid">
+            <h2 class="font-semibold">Follow us</h2>
+            <div class="flex gap-2 text-gray-500">
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid w-full col-span-2 gap-4 lg:grid-cols-3 lg:gap-12">
+          <div class="grid gap-3">
+            <h3 class="font-semibold">About</h3>
+            <div class="grid gap-2 text-gray-500 capitalize">
+              <a href="" class="hover:text-gray-700">About us</a>
+              <a href="" class="hover:text-gray-700">Deliver information</a>
+              <a href="" class="hover:text-gray-700">Primary Policy</a>
+              <a href="" class="hover:text-gray-700">Terms and conditions</a>
+              <a href="" class="hover:text-gray-700">Contact us</a>
+            </div>
+          </div>
+          <div class="grid gap-3">
+            <h3 class="font-semibold">My account</h3>
+            <div class="grid gap-2 text-gray-500 capitalize">
+              <a href="" class="hover:text-gray-700">Sign up</a>
+              <a href="" class="hover:text-gray-700">view cart</a>
+              <a href="" class="hover:text-gray-700">tracks my order</a>
+              <a href="" class="hover:text-gray-700">my wishlist</a>
+              <a href="" class="hover:text-gray-700">Help</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3 class="font-semibold">Install App</h3>
+            <div class="grid capitalize">
+              <p class="text-gray-500">from app store or google play</p>
+              <div class="flex gap-4">
+                <button
+                  class="px-4 py-2 font-semibold border rounded border-primary"
+                >
+                  <i class="fa-brands fa-apple"></i> App store
+                </button>
+                <button
+                  class="flex items-center gap-1 px-4 py-2 font-semibold border rounded border-primary"
+                >
+                  <i class="fa-brands fa-google-play"></i> Google play
+                </button>
+              </div>
+            </div>
+            <div class="grid gap-2 capitalize">
+              <p class="text-gray-500">secured payments gateways</p>
+              <div class="flex gap-4 text-xl">
+                <a href="" class="text-red-500"
+                  ><i class="fa-brands fa-cc-visa"></i
+                ></a>
+                <a href="" class="text-primary"
+                  ><i class="fa-brands fa-cc-mastercard"></i
+                ></a>
+                <a href="" class="text-yellow-700"
+                  ><i class="fa-solid fa-cash-register"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 lg:hidden">
+        <h2 class="font-semibold">Follow us</h2>
+        <div class="flex gap-2 text-gray-500">
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full pt-4 font-light text-gray-400 lg:text-center">
+        @2024
+        <span class="font-semibold text-primary"
+          >- Abrar Muthana<i class="ml-1 text-sm fa-solid fa-heart"></i> -</span
+        >
+        Ecommerce Template
+      </div>
+    </section>
+  </body>
+</html>
