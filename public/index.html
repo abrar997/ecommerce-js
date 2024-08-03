@@ -24,7 +24,7 @@
       <a href="/" class="flex items-center gap-1 font-serif text-3xl"
         >A <i class="-ml-1 text-sm text-primary fa-solid fa-leaf"></i
       ></a>
-      <ul class="flex gap-4 lg:gap-12">
+      <ul class="hidden gap-4 lg:flex lg:gap-12">
         <li
           class="font-semibold transition-all duration-300 hover:text-primary"
         >
@@ -60,21 +60,21 @@
 
     <section
       id="hero"
-      class="flex flex-col justify-center gap-3 p-4 pt-32 text-center bg-secondary lg:pt-56 lg:pb-32 lg:items-center"
+      class="flex flex-col justify-center gap-3 p-4 pt-32 pb-12 text-center bg-secondary lg:pt-56 lg:pb-32 lg:items-center"
     >
       <h4 class="font-semibold">Trade-in-offer</h4>
-      <h2 class="text-3xl font-bold capitalize lg:text-6xl">
+      <h2 class="text-4xl font-bold capitalize lg:text-6xl">
         Super value deals
       </h2>
       <h1
-        class="-mt-[14px] text-3xl font-bold text-teal-700 capitalize lg:text-6xl"
+        class="-mt-[14px] text-4xl font-bold text-teal-700 capitalize lg:text-6xl"
       >
         on all products
       </h1>
       <p class="text-gray-500">Save more with coupons & up to 70% off!</p>
 
       <button
-        class="items-center flex text-lg font-semibold bg-[url(assets/button.png)] bg-center bg-cover px-12 transition-all duration-300 bg-no-repeat border rounded bg-fill focus:outline-none"
+        class="items-center m-auto flex text-lg font-semibold bg-[url(assets/button.png)] bg-center bg-cover px-12 transition-all duration-300 bg-no-repeat border rounded bg-fill focus:outline-none"
       >
         <span class="m-auto text-center"> shop now </span>
       </button>
@@ -82,49 +82,54 @@
 
     <section
       id="features"
-      class="grid gap-3 p-4 py-6 font-semibold capitalize text-primary lg:gap-6 lg:grid-cols-6 lg:px-20 lg:py-12"
+      class="grid gap-5 p-4 py-6 font-semibold capitalize text-primary lg:gap-6 lg:grid-cols-6 lg:px-20 lg:py-12"
     >
       <div
-        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-blue-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+        class="flex flex-col items-center gap-3 p-4 text-center transition-all duration-300 bg-blue-200 border shadow lg:bg-transparent lg:justify-center lg:gap-5 hover:shadow-md"
       >
         <img src="assets/features/f1.png" alt="" />
         <h6 class="p-2 px-4 bg-blue-200 rounded">Free shipping</h6>
       </div>
       <div
-        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-pink-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+        class="flex flex-col items-center gap-3 p-4 text-center transition-all duration-300 bg-pink-200 border shadow lg:bg-transparent lg:justify-center lg:gap-5 hover:shadow-md"
       >
         <img src="assets/features/f2.png" alt="" />
         <h6 class="p-2 px-4 bg-pink-200 rounded">online order</h6>
       </div>
       <div
-        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-transparent bg-teal-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+        class="flex flex-col items-center gap-3 p-4 text-center transition-all duration-300 bg-transparent bg-teal-200 border shadow lg:bg-transparent lg:justify-center lg:gap-5 hover:shadow-md"
       >
         <img src="assets/features/f3.png" alt="" />
         <h6 class="p-2 px-4 bg-teal-200 rounded">save money</h6>
       </div>
       <div
-        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-purple-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+        class="flex flex-col items-center gap-3 p-4 text-center transition-all duration-300 bg-purple-200 border shadow lg:bg-transparent lg:justify-center lg:gap-5 hover:shadow-md"
       >
         <img src="assets/features/f4.png" alt="" />
         <h6 class="p-2 px-4 bg-purple-200 rounded">promotions</h6>
       </div>
       <div
-        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-red-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+        class="flex flex-col items-center gap-3 p-4 text-center transition-all duration-300 bg-red-200 border shadow lg:bg-transparent lg:justify-center lg:gap-5 hover:shadow-md"
       >
         <img src="assets/features/f5.png" alt="" />
         <h6 class="p-2 px-4 bg-red-200 rounded">happy sell</h6>
       </div>
       <div
-        class="flex items-center gap-3 p-4 text-center transition-all duration-300 bg-orange-200 border shadow lg:bg-transparent lg:justify-center lg:flex-col lg:gap-5 hover:shadow-md"
+        class="flex flex-col items-center gap-3 p-4 text-center transition-all duration-300 bg-orange-200 border shadow lg:bg-transparent lg:justify-center lg:gap-5 hover:shadow-md"
       >
         <img src="assets/features/f6.png" alt="" />
         <h6 class="p-2 px-4 bg-orange-200 rounded">F 7/24 support</h6>
       </div>
     </section>
 
-    <section id="product1" class="grid p-4 py-6 lg:gap-8 lg:pb-16 lg:px-20">
+    <section
+      id="product1"
+      class="grid gap-3 p-4 py-6 lg:gap-8 lg:pb-16 lg:px-20"
+    >
       <div class="leading-7 text-center">
-        <h2 class="font-bold capitalize lg:text-4xl">featured products</h2>
+        <h2 class="text-3xl font-bold capitalize lg:text-4xl">
+          featured products
+        </h2>
         <h2 class="text-gray-400">Summer collection new modern design</h2>
       </div>
       <div class="swiper mySwiper" style="--swiper-navigation-size: '25px'">
@@ -135,7 +140,7 @@
             <img
               src="https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              class="rounded lg:h-[250px] w-full object-cover"
+              class="rounded h-[80px] lg:h-[250px] w-full object-cover"
             />
             <div class="py-1 lg:py-2">
               <h3 class="text-sm text-gray-500">company name</h3>
@@ -165,7 +170,7 @@
             <img
               src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              class="rounded lg:h-[250px] w-full object-cover"
+              class="rounded h-[80px] lg:h-[250px] w-full object-cover"
             />
             <div class="py-1 lg:py-2">
               <h3 class="text-sm text-gray-500">company name</h3>
@@ -195,7 +200,7 @@
             <img
               src="https://images.unsplash.com/photo-1618677603286-0ec56cb6e1b5?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              class="rounded lg:h-[250px] w-full object-cover"
+              class="rounded h-[80px] lg:h-[250px] w-full object-cover"
             />
             <div class="py-1 lg:py-2">
               <h3 class="text-sm text-gray-500">company name</h3>
@@ -225,7 +230,7 @@
             <img
               src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
               alt=""
-              class="rounded lg:h-[250px] w-full object-cover"
+              class="rounded h-[80px] lg:h-[250px] w-full object-cover"
             />
             <div class="py-1 lg:py-2">
               <h3 class="text-sm text-gray-500">company name</h3>
@@ -255,7 +260,7 @@
             <img
               src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
-              class="rounded lg:h-[250px] w-full object-cover"
+              class="rounded h-[80px] lg:h-[250px] w-full object-cover"
             />
             <div class="py-1 lg:py-2">
               <h3 class="text-sm text-gray-500">company name</h3>
@@ -285,7 +290,7 @@
             <img
               alt=""
               src="https://images.unsplash.com/photo-1472666260353-23210544cdf1?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="rounded lg:h-[250px] w-full object-cover"
+              class="rounded h-[80px] lg:h-[250px] w-full object-cover"
             />
             <div class="py-1 lg:py-2">
               <h3 class="text-sm text-gray-500">company name</h3>
@@ -314,13 +319,12 @@
         <div class="rounded-full swiper-button-next"></div>
       </div>
     </section>
-    <!-- bg-[url('https://images.unsplash.com/photo-1688413708993-39da5ee59315?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] -->
 
     <section
       id="banner"
-      class="py-4 bg-orange-200 bg-cover rounded-bl-full rounded-br-full lg:p-12"
+      class="py-8 mx-4 bg-cover shadow lg:mx-20 bg-secondary lg:py-8"
     >
-      <div class="flex flex-col items-center gap-3 lg:py-12">
+      <div class="flex flex-col items-center gap-2 lg:gap-3 lg:py-12">
         <h2 class="font-semibold capitalize text-slate-900">Repair services</h2>
         <h1 class="text-3xl font-bold text-gray-900 capitalize lg:text-5xl">
           Up to
@@ -331,16 +335,19 @@
           Limited Time Offer: Free Shipping on Orders Over $50
         </p>
         <button
-          class="p-3 px-4 font-semibold text-white bg-gray-700 rounded hover:bg-opacity-80"
+          class="p-3 px-4 font-semibold text-white bg-orange-700 rounded hover:bg-opacity-80"
         >
           Explore more
         </button>
       </div>
     </section>
 
-    <section id="product2" class="grid p-4 py-6 lg:gap-8 lg:p-12 lg:px-20">
+    <section
+      id="product2"
+      class="grid gap-3 p-4 py-6 lg:gap-8 lg:p-12 lg:px-20"
+    >
       <div class="leading-7 text-center">
-        <h2 class="font-bold capitalize lg:text-4xl">New Arrivals</h2>
+        <h2 class="text-3xl font-bold capitalize lg:text-4xl">New Arrivals</h2>
         <h2 class="text-gray-400">Summer collection new modern design</h2>
       </div>
       <div
@@ -350,7 +357,7 @@
           <img
             src="https://images.unsplash.com/photo-1620799139652-715e4d5b232d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
           <div class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
@@ -378,7 +385,7 @@
           <img
             src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
           <div class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
@@ -406,7 +413,7 @@
           <img
             src="https://images.unsplash.com/photo-1618677603286-0ec56cb6e1b5?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
           <div class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
@@ -434,7 +441,7 @@
           <img
             src="https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
             alt=""
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
           <div class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
@@ -462,7 +469,7 @@
           <img
             src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
           <div class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
@@ -490,9 +497,9 @@
           <img
             alt=""
             src="https://images.unsplash.com/photo-1472666260353-23210544cdf1?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
-          <div class="pb-2">
+          <div h-[200px] class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
             <h1>Cartoon astronout T-shirts</h1>
             <p class="flex gap-1 text-sm">
@@ -518,9 +525,9 @@
           <img
             alt=""
             src="https://images.unsplash.com/photo-1472666260353-23210544cdf1?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
-          <div class="pb-2">
+          <div h-[200px] class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
             <h1>Cartoon astronout T-shirts</h1>
             <p class="flex gap-1 text-sm">
@@ -546,9 +553,9 @@
           <img
             alt=""
             src="https://images.unsplash.com/photo-1472666260353-23210544cdf1?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="rounded lg:h-[250px] w-full object-cover"
+            class="rounded h-[200px] lg:h-[250px] w-full object-cover"
           />
-          <div class="pb-2">
+          <div h-[200px] class="pb-2">
             <h3 class="text-sm text-gray-500">company name</h3>
             <h1>Cartoon astronout T-shirts</h1>
             <p class="flex gap-1 text-sm">
@@ -578,7 +585,7 @@
       class="grid gap-4 p-4 lg:px-20 lg:py-12 lg:grid-cols-2 lg:gap-12"
     >
       <div
-        class="bg-cover h-[400px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1613461920867-9ea115fee900?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        class="bg-cover h-[250px] lg:h-[400px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1613461920867-9ea115fee900?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div
           class="bg-[#00000062] absolute inset-0 lg:p-12 lg:py-28 p-4 py-12 flex flex-col justify-center"
@@ -594,7 +601,7 @@
         </div>
       </div>
       <div
-        class="bg-cover h-[400px] flex flex-col gap-1 relative bg-[url('https://images.unsplash.com/photo-1513373319109-eb154073eb0b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        class="bg-cover h-[250px] lg:h-[400px] flex flex-col gap-1 relative bg-[url('https://images.unsplash.com/photo-1513373319109-eb154073eb0b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div
           class="bg-[#6f6f6f3a] absolute inset-0 lg:p-12 lg:py-28 p-4 py-12 flex flex-col justify-center"
@@ -613,10 +620,10 @@
 
     <section
       id="offers"
-      class="grid gap-4 p-4 lg:px-20 lg:grid-cols-3 lg:gap-12"
+      class="grid gap-4 px-4 lg:p-4 lg:px-20 lg:grid-cols-3 lg:gap-12"
     >
       <div
-        class="bg-cover h-[220px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        class="bg-cover h-[250px] lg:h-[220px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div
           class="bg-[#2b2b2b81] absolute inset-0 lg:p-6 lg:py-12 p-4 py-12 flex flex-col justify-center"
@@ -633,7 +640,7 @@
         </div>
       </div>
       <div
-        class="bg-cover h-[220px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951923523-0c76b14d4852?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        class="bg-cover h-[250px] lg:h-[220px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div
           class="bg-[#2b2b2b81] absolute inset-0 lg:p-6 lg:py-12 p-4 py-12 flex flex-col justify-center"
@@ -651,7 +658,7 @@
       </div>
 
       <div
-        class="bg-cover h-[220px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1523381294911-8d3cead13475?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        class="bg-cover h-[250px] lg:h-[220px] flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div
           class="bg-[#29282881] absolute inset-0 lg:p-6 lg:py-12 p-4 py-12 flex flex-col justify-center"
@@ -669,8 +676,142 @@
       </div>
     </section>
 
-    <section id="footer" class="py-12 bg-secondary lg:px-20 lg:mt-12">
-      <h1 class="text-3xl">Footer</h1>
+    <section
+      class="relative mt-8 h-[200px] lg:h-[250px] lg:mt-12 text-white bg-[url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] grid lg:grid-cols-2 lg:gap-12"
+    >
+      <div
+        class="absolute bg-[#000000a9] inset-0 flex flex-col lg:grid lg:px-20 lg:p-12 gap-3 items-center justify-center"
+      >
+        <div class="text-center">
+          <h1 class="text-3xl font-bold capitalize">Sign up for networks</h1>
+          <p class="text-lg font-light text-gray-400">
+            Get Email updates about our latest shop and special offers
+          </p>
+        </div>
+        <form class="flex">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="px-4 py-3 w-full lg:w-[400px] bg-white border-none rounded rounded-r-none placeholder:text-gray-600"
+          />
+          <button
+            class="px-4 py-3 w-[50%] lg:w-[30%] font-semibold text-white rounded rounded-l-none hover:bg-opacity-90 lg:px-6 bg-primary"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer" class="p-4 lg:py-8 bg-secondary lg:px-20">
+      <div class="grid items-start gap-4 lg:grid-cols-3 lg:gap-0">
+        <div class="grid col-span-1 gap-4">
+          <a href="/" class="flex items-center gap-1 font-serif text-5xl"
+            >A <i class="-ml-1 text-lg text-primary fa-solid fa-leaf"></i
+          ></a>
+
+          <div>
+            <h3 class="text-xl font-semibold">contact</h3>
+
+            <p>
+              Address: <span class="text-gray-500">Town in this world</span>
+            </p>
+            <p>Phone: <span class="text-gray-500">+964783119025433</span></p>
+            <p>
+              Hours : <span class="text-gray-500">10:00-18:00 Sun-Fri</span>
+            </p>
+          </div>
+          <div class="hidden lg:grid">
+            <h2 class="font-semibold">Follow us</h2>
+            <div class="flex gap-2 text-gray-500">
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="" class="hover:text-gray-700"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid w-full col-span-2 gap-4 lg:grid-cols-3 lg:gap-12">
+          <div class="grid gap-3">
+            <h3 class="font-semibold">About</h3>
+            <div class="grid gap-2 text-gray-500 capitalize">
+              <a href="" class="hover:text-gray-700">About us</a>
+              <a href="" class="hover:text-gray-700">Deliver information</a>
+              <a href="" class="hover:text-gray-700">Primary Policy</a>
+              <a href="" class="hover:text-gray-700">Terms and conditions</a>
+              <a href="" class="hover:text-gray-700">Contact us</a>
+            </div>
+          </div>
+          <div class="grid gap-3">
+            <h3 class="font-semibold">My account</h3>
+            <div class="grid gap-2 text-gray-500 capitalize">
+              <a href="" class="hover:text-gray-700">Sign up</a>
+              <a href="" class="hover:text-gray-700">view cart</a>
+              <a href="" class="hover:text-gray-700">tracks my order</a>
+              <a href="" class="hover:text-gray-700">my wishlist</a>
+              <a href="" class="hover:text-gray-700">Help</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <h3 class="font-semibold">Install App</h3>
+            <div class="grid capitalize">
+              <p class="text-gray-500">from app store or google play</p>
+              <div class="flex gap-4">
+                <button
+                  class="px-4 py-2 font-semibold border rounded border-primary"
+                >
+                  <i class="fa-brands fa-apple"></i> App store
+                </button>
+                <button
+                  class="flex items-center gap-1 px-4 py-2 font-semibold border rounded border-primary"
+                >
+                  <i class="fa-brands fa-google-play"></i> Google play
+                </button>
+              </div>
+            </div>
+            <div class="grid gap-2 capitalize">
+              <p class="text-gray-500">secured payments gateways</p>
+              <div class="flex gap-4 text-xl">
+                <a href="" class="text-red-500"
+                  ><i class="fa-brands fa-cc-visa"></i
+                ></a>
+                <a href="" class="text-primary"
+                  ><i class="fa-brands fa-cc-mastercard"></i
+                ></a>
+                <a href="" class="text-yellow-700"
+                  ><i class="fa-solid fa-cash-register"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 lg:hidden">
+        <h2 class="font-semibold">Follow us</h2>
+        <div class="flex gap-2 text-gray-500">
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="" class="hover:text-gray-700"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+      <div class="w-full pt-4 font-light text-gray-400 lg:text-center">
+        @2024
+        <span class="font-semibold text-primary"
+          >- Abrar Muthana<i class="ml-1 text-sm fa-solid fa-heart"></i> -</span
+        >
+        Ecommerce Template
+      </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
