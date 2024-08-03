@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const close = document.getElementById("close");
   if (button) {
     button.addEventListener("click", function () {
-      navMenu.classList.replace("-right-[300px]", "right-0");
+      navMenu.classList.replace("right-[-300px]", "right-0");
     });
   }
 
   if (close) {
     close.addEventListener("click", function () {
-      navMenu.classList.replace("right-0", "-right-[300px]");
+      navMenu.classList.replace("right-0", "right-[-300px]");
     });
   }
 });
