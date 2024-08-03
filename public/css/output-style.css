@@ -852,10 +852,6 @@ video {
   background-image: url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 }
 
-.bg-\[url\(assets\/button\.png\)\] {
-  background-image: url(assets/button.png);
-}
-
 .bg-cover {
   background-size: cover;
 }

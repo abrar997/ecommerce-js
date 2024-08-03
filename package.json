@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./public/css/input-style.css -o ./public/css/output-style.css",
-    "watch:css": "tailwindcss -i ./public/input-style.css -o ./public/css/output-style.css --watch",
+    "watch:css": "tailwindcss -i ./public/css/input-style.css -o ./public/css/output-style.css --watch",
     "build": "npm run build:css"
   },
   "author": "",
