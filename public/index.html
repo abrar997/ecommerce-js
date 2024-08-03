@@ -13,51 +13,99 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <title>Ecommerce</title>
+    <script src="./js/index.js"></script>
   </head>
   <body class="bg-main font-main">
     <section
       id="header"
-      class="fixed inset-x-0 z-50 flex items-center justify-between p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-6 bg-secondary"
+      class="fixed inset-x-0 z-50 p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
     >
-      <a href="/" class="flex items-center gap-1 font-serif text-3xl"
-        >A <i class="-ml-1 text-sm text-primary fa-solid fa-leaf"></i
-      ></a>
-      <div class="flex items-center gap-12">
-        <ul class="hidden gap-4 lg:flex lg:gap-12">
-          <li
-            class="font-semibold transition-all duration-300 hover:text-primary"
-          >
-            <a href="index.html">Home</a>
-          </li>
-          <li
-            class="font-semibold transition-all duration-300 hover:text-primary"
-          >
-            <a href="shop.html">Shop</a>
-          </li>
-          <li
-            class="font-semibold transition-all duration-300 hover:text-primary"
-          >
-            <a href="blog.html">blog</a>
-          </li>
-          <li
-            class="font-semibold transition-all duration-300 hover:text-primary"
-          >
-            <a href="about.html">about</a>
-          </li>
-          <li
-            class="font-semibold transition-all duration-300 hover:text-primary"
-          >
-            <a href="contact.html">contact</a>
-          </li>
-        </ul>
-        <button
-          class="flex items-center justify-center p-2 text-gray-800 lg:h-10 lg:w-10"
-        >
-          <i class="text-xl fa-solid fa-bag-shopping"></i>
-        </button>
+      <div class="flex items-center justify-between p-4">
+        <a href="/" class="flex items-center gap-1 font-serif text-3xl"
+          >A <i class="-ml-1 text-sm text-primary fa-solid fa-leaf"></i
+        ></a>
+        <div class="flex items-center gap-12">
+          <ul class="hidden gap-4 lg:flex lg:gap-12">
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="shop.html">Shop</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="blog.html">blog</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="about.html">about</a>
+            </li>
+            <li
+              class="font-semibold transition-all duration-300 hover:text-primary"
+            >
+              <a href="contact.html">contact</a>
+            </li>
+          </ul>
+          <div class="flex gap-4">
+            <button class="text-lg text-gray-800 lg:hidden" id="bar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="text-gray-700">
+              <i class="text-xl fa-solid fa-bag-shopping"></i>
+            </button>
+          </div>
+        </div>
       </div>
+      <ul
+        id="nav"
+        class="absolute items-start top-0 -right-[300px] flex flex-col w-[300px] h-screen gap-2 px-4 py-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
+      >
+        <button
+          class="p-2 px-4 text-xl font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          id="close"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="index.html">Home</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="shop.html">Shop</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="blog.html">blog</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="about.html">about</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <a href="contact.html">contact</a>
+        </li>
+        <li
+          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+        >
+          <button class="text-gray-700">
+            <i class="text-xl fa-solid fa-bag-shopping"></i>
+          </button>
+        </li>
+      </ul>
     </section>
 
     <section
