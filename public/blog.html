@@ -13,7 +13,8 @@
   </head>
   <body class="bg-main font-main">
     <section
-      class="fixed inset-x-0 z-50 p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
+      id="header"
+      class="fixed inset-x-0 z-50 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
     >
       <div class="flex items-center justify-between p-4">
         <a href="/" class="flex items-center gap-1 font-serif text-3xl"
@@ -59,16 +60,16 @@
       </div>
       <ul
         id="nav"
-        class="absolute items-start top-0 right-[-300px] flex flex-col w-[300px] h-screen gap-2 px-4 py-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
+        class="absolute items-start top-0 text-left py-4 right-[-500px] flex flex-col w-[300px] h-screen gap-2 px-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
       >
         <button
-          class="p-2 px-4 text-xl font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          class="absolute p-2 py-4 text-xl font-semibold transition-all duration-300 left-6 top-2 hover:bg-opacity-80 hover:text-primary"
           id="close"
         >
           <i class="fa-solid fa-xmark"></i>
         </button>
         <li
-          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          class="w-full p-2 px-4 pt-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
         >
           <a href="index.html">Home</a>
         </li>
@@ -93,7 +94,7 @@
           <a href="contact.html">contact</a>
         </li>
         <li
-          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          class="w-full px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
         >
           <button class="text-gray-700">
             <i class="text-xl fa-solid fa-bag-shopping"></i>
@@ -103,7 +104,7 @@
     </section>
 
     <section
-      class="flex bg-[url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat bg-fixed relative items-center justify-center gap-3 p-4 bg-purple lg:h-[380px] h-[300px] lg:items-center"
+      class="flex bg-[url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat bg-fixed relative items-center justify-center gap-3 p-4 bg-purple lg:h-[380px] lg:h-[300px] w-full h-[200px] object-cover lg:items-center"
     >
       <div
         class="flex flex-col absolute inset-0 lg:pt-32 text-center pt-24 justify-center items-center text-white bg-[#00000055]"
@@ -123,22 +124,22 @@
           >
             13/01
           </div>
-          6
           <div class="absolute w-full top-7 cols-span-1 z-1 lg:top-11">
             <img
               src="https://images.unsplash.com/photo-1603252109360-909baaf261c7?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="h-[300px]"
+              class="lg:h-[300px] w-full h-[220px] object-cover"
             />
           </div>
         </div>
         <div
-          class="flex flex-col items-start justify-center col-span-2 gap-3 p-12 px-6 lg:py-24"
+          class="flex flex-col items-start justify-center col-span-2 p-12 px-6 py-10 lg:gap-3 lg:py-24"
         >
-          <h1 class="text-3xl font-semibold">Sustainable Fashion Choices</h1>
+          <h1 class="text-xl font-semibold lg:text-3xl">
+            Sustainable Fashion Choices
+          </h1>
           <p>
             More than ever, consumers are prioritizing sustainability in their
-            fashion choices. This season, eco-friendly fabrics and ethical
-            brands are taking center stage.
+            fashion choices.
           </p>
           <button
             class="flex items-center gap-2 font-semibold text-gray-800 uppercase hover:text-gray-500"
@@ -155,18 +156,19 @@
           >
             13/01
           </div>
-          6
           <div class="absolute w-full top-7 cols-span-1 z-1 lg:top-11">
             <img
               src="https://images.unsplash.com/photo-1561052967-61fc91e48d79?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="h-[300px]"
+              class="lg:h-[300px] w-full h-[220px] object-cover"
             />
           </div>
         </div>
         <div
-          class="flex flex-col items-start justify-center col-span-2 gap-3 p-12 px-6 lg:py-24"
+          class="flex flex-col items-start justify-center col-span-2 p-12 px-6 py-10 lg:gap-3 lg:py-24"
         >
-          <h1 class="text-3xl font-semibold">Bright and Bold Colors</h1>
+          <h1 class="text-xl font-semibold lg:text-3xl">
+            Bright and Bold Colors
+          </h1>
           <p>
             Summer is the perfect time to experiment with color. From sunny
             yellows to ocean blues,
@@ -189,14 +191,16 @@
           <div class="absolute w-full top-7 cols-span-1 z-1 lg:top-11">
             <img
               src="https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              class="h-[300px] w-full"
+              class="lg:h-[300px] w-full h-[220px] object-cover"
             />
           </div>
         </div>
         <div
-          class="flex flex-col items-start justify-center col-span-2 gap-3 p-12 px-6 lg:py-24"
+          class="flex flex-col items-start justify-center col-span-2 p-12 px-6 py-10 lg:gap-3 lg:py-24"
         >
-          <h1 class="text-3xl font-semibold">Bold Prints and Patterns</h1>
+          <h1 class="text-xl font-semibold lg:text-3xl">
+            Bold Prints and Patterns
+          </h1>
           <p>
             This summer is all about making a statement, and nothing says bold
             quite like vibrant prints and patterns.

@@ -748,6 +748,10 @@ video {
   height: 80px;
 }
 
+.h-\[220px\] {
+  height: 220px;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -1075,6 +1079,10 @@ video {
   padding: 1rem;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1138,6 +1146,11 @@ video {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-12 {
@@ -1517,6 +1530,10 @@ video {
     height: 500px;
   }
 
+  .lg\:h-\[300px\] {
+    height: 300px;
+  }
+
   .lg\:w-\[30\%\] {
     width: 30%;
   }
@@ -1710,5 +1727,10 @@ video {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
