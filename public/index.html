@@ -19,7 +19,7 @@
   <body class="bg-main font-main">
     <section
       id="header"
-      class="fixed inset-x-0 z-50 p-4 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
+      class="fixed inset-x-0 z-50 capitalize border-b shadow-sm header lg:px-20 lg:py-2 bg-secondary"
     >
       <div class="flex items-center justify-between p-4">
         <a href="/" class="flex items-center gap-1 font-serif text-3xl"
@@ -65,16 +65,16 @@
       </div>
       <ul
         id="nav"
-        class="absolute items-start top-0 right-[-300px] flex flex-col w-[300px] h-screen gap-2 px-4 py-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
+        class="absolute items-start top-0 text-left py-4 right-[-500px] flex flex-col w-[300px] h-screen gap-2 px-4 pt-10 space-y-2 transition-all duration-300 ease-in-out bg-secondary lg:hidden"
       >
         <button
-          class="p-2 px-4 text-xl font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          class="absolute p-2 py-4 text-xl font-semibold transition-all duration-300 left-6 top-2 hover:bg-opacity-80 hover:text-primary"
           id="close"
         >
           <i class="fa-solid fa-xmark"></i>
         </button>
         <li
-          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          class="w-full p-2 px-4 pt-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
         >
           <a href="index.html">Home</a>
         </li>
@@ -99,7 +99,7 @@
           <a href="contact.html">contact</a>
         </li>
         <li
-          class="w-full p-2 px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
+          class="w-full px-4 font-semibold transition-all duration-300 hover:bg-opacity-80 hover:text-primary"
         >
           <button class="text-gray-700">
             <i class="text-xl fa-solid fa-bag-shopping"></i>
@@ -709,7 +709,7 @@
       </div>
 
       <div
-        class="bg-cover h-[250px] lg:h-[220px] w-full col-span-2 flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+        class="bg-cover h-[250px] lg:h-[220px] w-full lg:col-span-1 col-span-2 flex flex-col gap-1 text-white relative bg-[url('https://images.unsplash.com/photo-1716951872043-9ece00ee1d90?q=80&w=2055&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
       >
         <div
           class="bg-[#29282881] absolute inset-0 lg:p-6 lg:py-12 p-4 py-12 flex flex-col justify-center"
@@ -728,14 +728,14 @@
     </section>
 
     <section
-      class="relative mt-8 h-[200px] lg:h-[250px] lg:mt-12 text-white bg-[url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] grid lg:grid-cols-2 lg:gap-12"
+      class="relative mt-8 h-[240px] lg:h-[250px] lg:mt-12 text-white bg-[url('https://images.unsplash.com/photo-1550353127-b0da3aeaa0ca?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] grid lg:grid-cols-2 lg:gap-12"
     >
       <div
-        class="absolute bg-[#000000a9] inset-0 flex flex-col lg:grid lg:px-20 lg:p-12 gap-3 items-center justify-center"
+        class="absolute bg-[#000000a9] inset-0 flex flex-col lg:grid px-2 lg:px-20 lg:p-12 gap-3 items-center justify-center"
       >
         <div class="text-center">
           <h1 class="text-3xl font-bold capitalize">Sign up for networks</h1>
-          <p class="text-lg font-light text-gray-400">
+          <p class="font-light text-gray-400 lg:text-lg">
             Get Email updates about our latest shop and special offers
           </p>
         </div>
