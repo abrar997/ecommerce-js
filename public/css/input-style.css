@@ -23,3 +23,11 @@
   color: rgb(162, 162, 6);
   font-size: 12px;
 }
+#nav {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+#nav.open {
+  transform: translateX(0);
+}

@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const close = document.getElementById("close");
   if (button) {
     button.addEventListener("click", function () {
-      navMenu.classList.replace("right-[-500px]", "right-0");
+      navMenu.classList.add("open");
     });
   }
 
   if (close) {
     close.addEventListener("click", function () {
-      navMenu.classList.replace("right-0", "right-[-500px]");
+      navMenu.classList.remove("open");
     });
   }
 });
